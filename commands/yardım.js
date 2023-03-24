@@ -49,12 +49,16 @@ if(value === "ayarlamalı") {
 const embed = new diskord.EmbedBuilder()
 .setTitle("<a:psoprime_emoji:1084585759195021422> Ayarlamalı Komutları <a:psoprime_emoji:1084585759195021422>")
 .setDescription("**p!küfürengel |** Küfür engelleme sistemini ayarlamanızı sağlar\n**p!reklamengel |** Reklam engelleme sistemini ayarlamanızı sağlar\n**p!oto-cevap |** Belirtilen yazıyı biri yazarsa bot belirtilen cevabı vermeye ayarlanır\n**p!otorol |** Sunucuya girenlere verilecek olan otorolü ayarlar\n**p!ototag |** Bot belirtilen tagı sunucuya girenlerin isimlerinin başına koyar\n**p!sa-as |** Oto sa-ası ayarlarsınız\n**p!sayaç |** Sayacı ayarlarsınız")
-message.channel.send({embeds: [embed]})
+const embed2 = new diskord.EmbedBuilder()
+message.channel.send({embeds: [embed2]})
+.setTitle("<a:psoprime_emoji:1084585759195021422> Ayarlamalı Komutları <a:psoprime_emoji:1084585759195021422>")
+.setDescription("**/kayıt-ayarla |** Kayıt Kanalını Ayarlarsınız.\n**/kayıt-sıfırla |** Kurduğunuz Kayıt Sistemini Sıfırlarsınız.")
+
 }
 }
 
 exports.conf = {
-  aliases: []
+  aliases: [""]
 }
 
 exports.help = {
