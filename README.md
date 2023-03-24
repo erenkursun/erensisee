@@ -1,3 +1,2 @@
-# Get Started!
-
-Add files and start typing 🎉
+# erensibot
+EQWWQSAOFJFJAPJGOPAKOSPPO ERENSİ KARDEŞİM UÇAK GELİYOR
