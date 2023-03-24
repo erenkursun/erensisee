@@ -15,7 +15,7 @@ module.exports.run = async(client, message, args, tools) => {
  } else {
     
     db.delete(`saas_${message.guild.id}`)
-    message.channel.send("<a:redlax_onay:1088882388953731142> | SA-AS sistemi kapatıldı.")
+    message.channel.send("<a:redlax_onay:1088882388953731142> Sa-As Sistemi Kapatıldı")
     
   }
 
@@ -25,7 +25,7 @@ module.exports.run = async(client, message, args, tools) => {
 
 
 exports.conf = {
-  aliases: ["sa-as"],
+  aliases: ["sa-as", "sa-as aç", "sa-as kapat"],
   permLevel: 0,
 };
 exports.help = {
