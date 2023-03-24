@@ -213,4 +213,4 @@ client.on("guildMemberAdd", async member => {
   let ototag = db.get(`ototag_${member.guild.id}`);;
   if (ototag) return member.setNickname(`${ototag} ${member.user.username}`)
 })
-client.login(config.token)
+client.login(process.env.token)
