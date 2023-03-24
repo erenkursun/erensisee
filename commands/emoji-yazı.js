@@ -36,7 +36,7 @@ mapping[c] = mapping[c.toUpperCase()] = ` :regional_indicator_${c}:`;
 exports.run = (client, message, args) => {
 if (args.length < 1) return message.reply('**Bir mesaj belirt**')
 
-if (args.length > 50) return message.channel.send(`:x: En fazla 50 Harf Kullanabilirsiniz.`);
+if (args.length > 50) return message.channel.send(`<a:x_:1084537865930813511> En Fazla 50 Harf Kullanabilirsiniz.`);
 
 message.channel.send(
 args.join(' ')

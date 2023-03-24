@@ -169,7 +169,7 @@ client.on('guildMemberRemove', async member => {
   let kalan = sayac.sayi - member.guild.memberCount
   if(!sayac) return;
   
-  client.channels.cache.get(sayac.kanal).send(":mega: Görüşürüz **"+member.user.username+"** Senin Yüzünden `"+member.guild.memberCount+"` Kişi Olduk! <:blurple_cross:948649220355801108>")
+  client.channels.cache.get(sayac.kanal).send(":: Görüşürüz **"+member.user.username+"** Senin Yüzünden `"+member.guild.memberCount+"` Kişi Olduk! <:blurple_cross:948649220355801108>")
   
 });
 
@@ -178,7 +178,7 @@ client.on('guildMemberAdd', async member => {
   let otorol = db.fetch(`otorol_${member.guild.id}`)
   if(!otorol) return;
   
-  client.channels.cache.get(otorol.kanal).send(":mega: **"+member.user.tag+"** Kullanıcı Katıldı! Gerekli Rolleri Verdim. <:blurple_check:948646981260148747>")
+  client.channels.cache.get(otorol.kanal).send("<:giris:1084586043870806036> **"+member.user.tag+"** Kullanıcı Katıldı! Gerekli Rolleri Verdim. <:blurple_check:948646981260148747>")
   member.roles.add(otorol.rol).catch(() => {})
   
 });

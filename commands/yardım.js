@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
 
   const embed = new diskord.EmbedBuilder()
   .setTitle("Kategoriler")
-  .setDescription(`<a:psoprime_emoji:1084585759195021422> **p!yardım ayarlamalı |** Ayarlamalı yetkili komutlarını gösterir.\n\n<a:psoprime_emoji:1084585759195021422>  **p!yardım eğlence |** Eğlence Komutlarını Gösterir.\n\n<a:psoprime_emoji:1084585759195021422> **p!yardım kullanıcı |** Kullanıcı Komutlarını Gösterir.\n\n<a:psoprime_emoji:1084585759195021422> **p!yardım yetkili |** Yetkili Komutlarını Gösterir.\n\n<a:psoprime_emoji:1084585759195021422> **p!yardım bot |** Bot Komutlarını Gösterir\n\n<a:psoprime_emoji:1084585759195021422> **ErensiBOT Bağlantılar** <a:psoprime_emoji:1084585759195021422>\n\n[Botu Sunucuna Ekle](${davet})\n[Destek Sunucum](${destek})\n[Bota Oy Ver](${topgg})`)
+  .setDescription(`<a:psoprime_emoji:1084585759195021422> **p!yardım ayarlamalı |** Ayarlamalı yetkili komutlarını gösterir.\n\n<a:psoprime_emoji:1084585759195021422>  **p!yardım eğlence |** Eğlence Komutlarını Gösterir.\n\n<a:psoprime_emoji:1084585759195021422> **p!yardım kullanıcı |** Kullanıcı Komutlarını Gösterir.\n\n<a:psoprime_emoji:1084585759195021422> **p!yardım yetkili |** Yetkili Komutlarını Gösterir.\n\n<a:psoprime_emoji:1084585759195021422> **p!yardım bot |** Bot Komutlarını Gösterir\n\n<a:psoprime_emoji:1084585759195021422> **PSOPrime Bağlantılar** <a:psoprime_emoji:1084585759195021422>\n\n[Botu Sunucuna Ekle](${davet})\n[Destek Sunucum](${destek})\n[Bota Oy Ver](${topgg})`)
   if(!args[0]) return message.channel.send({embeds: [embed]})
 if(value === "bot") {
 const embed = new diskord.EmbedBuilder()

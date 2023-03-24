@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
     } else {
     const data = collection.map(mr => "`"+mr.user.username+"`").slice(0, 60).join(", ")
     const embed2 = new EmbedBuilder()
-    .setTitle("ErensiBOT - Ban List")
+    .setTitle("Ban List")
     .setColor("#ff0000")
     .setDescription(data)
     

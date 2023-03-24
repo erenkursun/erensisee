@@ -4,13 +4,13 @@ const math = require('math-expression-evaluator')
 exports.run = function(client, message, args) {
 var soru = args.slice(0).join(' ');
 
-if(!soru) return message.reply('Bir işlem belirtin. **Doğru Kullanım**: !hesapla <işlem>')
+if(!soru) return message.reply('<:ok:1088881942725926982> Bir İşlem Belirtin. **Doğru Kullanım**: p!hesapla <işlem>')
 else {
 let cevap;
 try {
 cevap = math.eval(soru)
 } catch(err) {
-return message.channel.send('Hatalı işlem: lütfen sadece bilinen tarzda işlem yapınız.')
+return message.channel.send('<a:x_:1084537865930813511> Hatalı İşlem: Lütfen Sadece Bilinen Tarzda İşlem Yapınız.')
 }
 
 const embed = new Discord.EmbedBuilder()

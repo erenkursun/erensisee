@@ -6,11 +6,11 @@ exports.run = async(client, message, args) => {
 if (message.channel.type !== Discord.ChannelType.GuildText) return;
 const limit = args[0] ? args[0] : 0;
 
-if(!limit) return message.reply(`Doğru kullanım: \`!yavaşmod [0/21600]\``)
+if(!limit) return message.reply(`<:ok:1088881942725926982> Doğru Kullanım: \`!yavaşmod [0/21600]\``)
 
-if(isNaN(limit)) return message.reply(`Lütfen sayı belirt.\nDoğru kullanım: \`!yavaşmod 120\``)
+if(isNaN(limit)) return message.reply(`<:ok:1088881942725926982> Lütfen Sayı Belirt.\nDoğru kullanım: \`!yavaşmod 120\``)
 
-if (limit > 21600) return message.reply("Süre limiti maksimum **6** saat olabilir.")
+if (limit > 21600) return message.reply("<:ok:1088881942725926982> Süre Limiti Maksimum **6** Saat Olabilir.")
 
 message.reply(`Yazma süre limiti **${limit}** saniye olarak ayarlanmıştır.`)
 

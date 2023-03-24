@@ -14,7 +14,7 @@ const embed = new Discord.EmbedBuilder()
 }
 
 exports.conf = {
-  aliases: ["sb"]
+  aliases: ["sb", "sunucu-bilgi", "server-info", "sunucu-bilgisi"]
 }
 
 exports.help = {

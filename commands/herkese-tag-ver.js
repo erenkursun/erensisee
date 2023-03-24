@@ -11,7 +11,7 @@ module.exports.run = async(client, message, args, tools) => {
   if(!tag) return message.reply(": Herkese vereceğim tagı yazmalısın! Örnek: `e!herkesetagver 🔱`")
   
   message.guild.members.cache.forEach(user => {
-    user.setNickname(`${tag} | ${user.user.username}`).catch(err => message.channel.send(`Kurucu olduğun için ismini değiştiremiyorum!`) ? console.log("Yetkim yok.") :  null)
+    user.setNickname(`${tag} | ${user.user.username}`).catch(err => message.channel.send(`Kurucu olduğun için ismini değiştiremiyorum!`) ? console.log("<:ok:1088881942725926982> Sunucunuzdaki Yetkim Yetersiz. <a:x_:1084537865930813511>") :  null)
   });
   
   message.reply("Başarılı, herkesin ismini değiştirdim.")
