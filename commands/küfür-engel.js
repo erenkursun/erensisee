@@ -4,13 +4,13 @@ const db = require("croxydb")
 
 module.exports.run = async (client, message, args) => {
 
-  if (!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.reply(`   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  if (!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.reply(` <a:x_:1084537865930813511>  **Bu Komutu Kullanabilmek İçin "\`Yönetici\`" Yetkisine Sahip Olmalısın.**`);
    const embed = new Discord.EmbedBuilder()
    .setColor("Red")
-   .setDescription("✅ **Sistem Kapatıldı** \n Küfür Edildiğinde Bot Artık Onları Sansürlemicek.")
+   .setDescription("<a:redlax_onay:1088882388953731142> **Sistem Kapatıldı** \n Küfür Edildiğinde Bot Artık Onları Sansürlemicek.")
    const embed2 = new Discord.EmbedBuilder()
    .setColor("Red")
-  .setDescription("✅ **Sistem Açıldı** \n Küfür Edildiğinde Bot Artık Onları Sansürlicek.")
+  .setDescription("<a:redlax_onay:1088882388953731142> **Sistem Açıldı** \n Küfür Edildiğinde Bot Artık Onları Sansürlicek.")
 
 let küfür = db.fetch(`kufurengel_${message.guild.id}`);
 

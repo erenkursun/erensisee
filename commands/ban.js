@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 exports.run = async (client, message, args) => {
 
 
-        if(!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.channel.send("Üyeleri Banla Yetkiniz Yok.")
+        if(!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.channel.send("<:ok:1088881942725926982> <:ok:1088881942725926982> Üyeleri Banla Yetkiniz Yok.")
 
 
         let user = message.mentions.users.first();
@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
 
 
 
-        if(!user) return message.channel.send("Lütfen Banlanacak Kişiyi Belirtiniz.")
+        if(!user) return message.channel.send("<:ok:1088881942725926982> Lütfen Banlanacak Kişiyi Belirtiniz.")
 
 
 
@@ -28,7 +28,7 @@ const üye = message.guild.members.cache.get(user.id)
 
 
 
-message.channel.send("Banladım!")
+message.channel.send("<:ok:1088881942725926982> anladım!")
 
 
 

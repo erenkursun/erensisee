@@ -1,7 +1,7 @@
 const {EmbedBuilder} = require("discord.js");
 const config = require("../config.js")
 exports.run = async (client, message, args) => {
-   message.reply(`**${client.ws.ping}** ms`)
+   message.reply(`<:ok:1088881942725926982> **${client.ws.ping}** ms`)
 
 };
 exports.conf = {
