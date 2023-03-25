@@ -130,15 +130,6 @@ client.on("messageCreate", (message) => {
       "sikeyim",
       "aq",
       "mk",
-      "amına",
-      "am",
-      "sik kafası",
-      "sik",
-      "an eni sikeyim",
-      "aneni",
-      "kodumun",
-      "götüne çaktığım",
-      taşşağım
     ];
 
     if (kufurler.some((alo) => message.content.toLowerCase().includes(alo))) {

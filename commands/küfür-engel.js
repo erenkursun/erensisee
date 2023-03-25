@@ -36,7 +36,7 @@ if (!küfür)  {
   
   exports.conf = {
    
-    aliases: ["küfür"]
+    aliases: ["küfür", "küfür-engel aç", "küfür-engel kapat"]
     
   }
   
