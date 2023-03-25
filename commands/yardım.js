@@ -42,7 +42,7 @@ const embed = new diskord.EmbedBuilder()
 .setDescription("**p!afk |** AFK olunca seni etiketleyen kişiye sebebini yazar\n**p!atatürk |** Rastgele bir Atatürk fotoğrafı gönderir\n**p!avatar |** Etiketlediğiniz kişinin avatarını gösterir\n**p!emojiler |** Sunucuda bulunan emojileri gösterir\n**p!hesapla |** Belirtilen işlemi yapar\n**p!kurucu-kim |** Sunucunun kurucusunu söyler**\np!minecraft |** Belirlediğiniz Minecraft sunucusunun bilgilerini verir\n**p!not-al |** Bot not alır\n**p!notum |** Notunuzu gösterir\n**p!radyo |**  Sesli kanaldan Radyo dinlersiniz\n**p!sunucubilgi |** Bulunduğun sunucu hakkında bilgi verir")
 message.channel.send({embeds: [embed]})
 const embed2 = new diskord.EmbedBuilder()
-.setDescription("**p!puan |** Belirlediğiniz Kullanıcıya Puan /Ver/Al/Bak, Şeklinde Komutları Kullanabilirsiniz.\n")
+.setDescription("**p!puan |** Belirlediğiniz Kullanıcıya Puan /Ver/Al/Bak, Şeklinde Komutları Kullanabilirsiniz.\n**p!user |** Belirlediğiniz Kullanıcının Profil Bilgilerini Gösterir.\n")
 message.channel.send({embeds: [embed2]})
 }
 if(value === "ayarlamalı") {

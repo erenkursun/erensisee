@@ -5,11 +5,11 @@ const Discord = require('discord.js');
 
 
 module.exports.run = async(client, message, args, tools) => {
-  if (!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.reply(`   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  if (!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.reply(`<a:x_:1084537865930813511><:ok:1088881942725926982>    **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
   let rol = message.mentions.roles.first()
   let kanal = message.mentions.channels.first()
-  if(!kanal) return message.reply({content: "Bir Rol Etiketlemeli veya Rolün Adını yazmalısın. Örnek `e!otorol #kanal @rol`", allowedMentions: { repliedUser: false }})
-  if(!rol) return message.reply({content: "Bir Rol Etiketlemeli veya Rolün Adını yazmalısın. Örnek `e!otorol #kanal @rol`", allowedMentions: { repliedUser: false }})
+  if(!kanal) return message.reply({content: "<:ok:1088881942725926982> Bir Rol Etiketlemeli veya Rolün Adını yazmalısın. Örnek `p!otorol #kanal @rol`", allowedMentions: { repliedUser: false }})
+  if(!rol) return message.reply({content: "<:ok:1088881942725926982> Bir Rol Etiketlemeli veya Rolün Adını yazmalısın. Örnek `p!otorol #kanal @rol`", allowedMentions: { repliedUser: false }})
   const embed = new Discord.EmbedBuilder()
   .setAuthor({name: message.author.tag, iconURL: message.author.displayAvatarURL({dynamic: true})})
    .setColor("Red")

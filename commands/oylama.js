@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 let aciklama = args.slice(0).join(" ")
 if (!aciklama) return message.reply("Lütfen oylamanı yaz!")
 const embed = new EmbedBuilder()
-.setTitle("Godzilla - Oylama Sistemi!")
+.setTitle("Oylama Başladı!")
 .setDescription(`Oylama: **${aciklama}**\n\nEvet: **1**\n\nHayır: **1**`)
 .setColor("#ff0000")
 const row = new Discord.ActionRowBuilder()
