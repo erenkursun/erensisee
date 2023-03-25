@@ -30,10 +30,10 @@ message.channel.send({embeds: [embed2]})
 if(value === "eğlence") {
 const embed = new diskord.EmbedBuilder()
 .setTitle("<a:psoprime_emoji:1084585759195021422> Eğlence Komutları <a:psoprime_emoji:1084585759195021422>")
-.setDescription("**p!alkış |** Bot Alkışlar\n**p!aşkölçer |** Bot etiketlediğiniz kişiye karşı olan aşkını ölçer\n**p!emojiyazı |** Bot mesajınızı emoji haline getirir\n**p!hackle |** Etiketlediğiniz kişiyi hackler\n**p!kaçcm |** Malafatının uzunluğunu söyler")
+.setDescription("**p!alkış |** Bot Alkışlar\n**p!aşkölçer |** Bot etiketlediğiniz kişiye karşı olan aşkını ölçer\n**p!emojiyazı |** Bot mesajınızı emoji haline getirir\n**p!hackle |** Etiketlediğiniz kişiyi hackler\n**p!kaçcm |** Malafatının uzunluğunu söyler**p!sarıl |** Etiketlediğiniz kişiye sarılırsınız\n**p!slot |** Slots oyununu oynar\n**p!şanslısayım |** Bot Şanslı sayınızı tahmin eder")
 message.channel.send({embeds: [embed]})
 const embed2 = new diskord.EmbedBuilder()
-.setDescription("**p!sarıl |** Etiketlediğiniz kişiye sarılırsınız\n**p!slot |** Slots oyununu oynar\n**p!şanslısayım |** Bot Şanslı sayınızı tahmin eder")
+.setDescription("**p!1vs1 |** Etiketlediğiniz Kişiyle Vs Atarsınız.\n")
 message.channel.send({embeds: [embed2]})
 }
 if(value === "kullanıcı") {
